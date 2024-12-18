@@ -62,6 +62,25 @@ for (name, chapter, color), y in zip(characters, y_positions):
     i += 0.12
     j += 1
 
+# 金角、银角大王(31—33回)：唐僧(y=0)、猪八戒(y=-1)、沙僧(y=-2)
+ax.hlines(y=0, xmin=31, xmax=33, color='black', linewidth=3, label="被抓走")   # 覆盖唐僧线段
+ax.hlines(y=0.36, xmin=31, xmax=33, color='black', linewidth=3)  # 覆盖八戒线段
+ax.hlines(y=0.48, xmin=31, xmax=33, color='black', linewidth=3)  # 覆盖沙僧线段
+
+# 黄袍怪(36—39回)抓走唐僧(y=0)
+ax.hlines(y=0, xmin=36, xmax=39, color='black', linewidth=3)
+
+# 红孩儿(40—42回)抓走唐僧(y=0)
+ax.hlines(y=0, xmin=40, xmax=42, color='black', linewidth=3)
+
+# 蜘蛛精盘丝洞(72—73回)抓走唐僧(y=0)
+ax.hlines(y=0, xmin=72, xmax=73, color='black', linewidth=3)
+
+# 狮驼岭三魔(85—87回)抓走唐僧(y=0)、八戒(y=-1)、沙僧(y=-2)
+ax.hlines(y=0, xmin=85, xmax=87, color='black', linewidth=3)
+ax.hlines(y=0.36, xmin=85, xmax=87, color='black', linewidth=3)
+ax.hlines(y=0.48, xmin=85, xmax=87, color='black', linewidth=3)
+
 
 # 设置横轴范围
 ax.set_xlim(0, total_chapters + 1)
