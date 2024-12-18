@@ -22,8 +22,8 @@ with open('./relation_data/relation.json', 'r', encoding='utf-8') as f:
 
 identity_color_map = {
     "佛家": "gold",
-    "天庭": "lightgreen",
-    "其它": "lightblue"
+    "天庭": "lightblue",
+    "其它": "lightgreen"
 }
 
 name_role_map = {}
@@ -61,7 +61,7 @@ for node in G.nodes():
 
 plt.figure(figsize=(12, 8))
 # 绘制节点：减小节点大小
-nx.draw_networkx_nodes(G, pos, node_color=node_colors, node_size=800, alpha=0.9)
+nx.draw_networkx_nodes(G, pos, node_color=node_colors, node_size=800, alpha=0.65)
 nx.draw_networkx_labels(G, pos, font_size=6, font_family='sans-serif')
 
 # 分关系类型绘制边，不显示标签
