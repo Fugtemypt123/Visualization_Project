@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualization Project</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .section {
+            padding: 40px;
+            border-bottom: 1px solid #ccc;
+            text-align: center;
+        }
+        .section img {
+            max-width: 100%;
+            height: auto;
+        }
+        .section h2 {
+            margin-top: 0;
+        }
+        .subtitle {
+            font-size: 20px;
+            font-weight: bold;
+            color: #333;
+            text-align: right;
+            font-family: 'Arial Black', Gadget, sans-serif;
+            margin-bottom: 80px;
+        }
+    </style>
+</head>
+<body>
+    <div class="section">
+        <svg width="350" height="150">
+            <defs>
+                <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" style="stop-color:#401010;stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:#af3e14;stop-opacity:1" />
+                </linearGradient>
+            </defs>
+            <text x="20" y="100" font-family="Arial Black" font-size="80" fill="url(#grad1)" stroke="black" stroke-width="3">
+                Taoism
+            </text>
+        </svg>
+        <svg width="200" height="150">
+            <defs>
+                <linearGradient id="grad0" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" style="stop-color:#af3e14;stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:#d0bf05;stop-opacity:1" />
+                </linearGradient>
+            </defs>
+            <text x="80" y="100" font-family="Brush Script MT, cursive" font-size="50" fill="url(#grad0)" stroke="black" stroke-width="3">
+                V.S.
+            </text>
+        </svg>
+        <svg width="500" height="150">
+            <defs>
+                <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" style="stop-color:#e0a61d;stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:#7f5004de;stop-opacity:1" />
+                </linearGradient>
+            </defs>
+            <text x="50" y="100" font-family="Arial Black" font-size="80" fill="url(#grad2)" stroke="black" stroke-width="3">
+                Buddhism
+            </text>
+        </svg>
+        <h2 class="subtitle">--- Bipartisan Conflicts Analysis from "Journey To The West"</h2>
+        <p>在《西游记》中，佛道二派的斗争是一个重要的主题。我组以此为核心线索研究全书，从书中收录数据，使用可视化的方式和技巧，力求展现其中的明争暗斗、讲述清晰的故事。佛教以唐僧师徒取经为主线，展现了佛教的慈悲为怀和普渡众生的理念；而道教则通过各种神仙、妖怪的形象，体现了道教的自然哲学和修炼成仙的追求。小说中的许多情节都隐含着佛道之间的较量和融合，但另一方面，这种斗争并非简单的对立，而是在相互竞争中寻求统一。</p>
+    </div>
+    <div class="section">
+        <h2>Title 1</h2>
+        <img src="../visualize_images/main_story.png" alt="main story">
+        <p>本图展示了西游记的完整故事线，按照层次全书可以分为四个部分，与此同时，线条体现了每个事件对应的81难的难数的个数,并且用标注的方式展示了这些难是自己通关的困难和收到了别人的帮助而通关的困难。</p>
+    </div>
+    <div class="section">
+        <img src="../visualize_images/timeline.png" alt="timeline">
+        <h2>Title 2</h2>
+        <p>本图师徒四人以及白龙马分别是在哪一个章回（可以映射到哪一个劫难）参与西天取经的路途中的，并且黑色的线段代表这几个章回中，师徒四人中的某几个人被妖怪抓走了。整个队伍形成示意图展示了西天取经的大致时间线西游记人物关系图展示了三个派别“佛家”“天庭”和“其它”的人物关系，我们可以发现，天庭和佛家之间的关系较为稀疏，这也进一步阐明了佛家和天庭两股势力有对立关系，道家与佛家之间相互斗争的结论。另外，其它妖怪相对而言与佛家的关系更为密切，也表明佛家作为三界中守护秩序的存在，善于用教化来归化妖怪，维护自身的势力与地位。</p>
+    </div>
+    <div class="section">
+        <img src="../visualize_images/relation.png" alt="relation">
+        <h2>Title 3</h2>
+        <p>本图体现了三种势力的出场频率分布在各回目中并不均匀，佛家、天庭两股势力很少在同一章节内一起出现，而通常分开出现，出现频率也不尽相同。这表明两股势力虽然表面上合作帮助唐僧师徒，但实际上对西行之路有着不同的想法和安排。同时，其他妖怪的出场频率相较另两者更低，这可能也表明西行之路上的考验大多是由佛家或天庭故意安排的，而非简单的“妖怪要吃唐僧肉”所能概括。另外，其他妖怪往往伴随着佛教势力一起出现，这可能说明佛教善于通过教化等方式收服妖怪，扩展自己的势力范围</p>
+    </div>
+    <div class="section">
+        <img src="../visualize_images/stacked_bar_chart_ch.png" alt="stack bar chart">
+        <h2>Title 4</h2>
+        <p>西游记人物关系图展示了三个派别“佛家”“天庭”和“其它”的人物关系，我们可以发现，天庭和佛家之间的关系较为稀疏，这也进一步阐明了佛家和天庭两股势力有对立关系，道家与佛家之间相互斗争的结论。另外，其它妖怪相对而言与佛家的关系更为密切，也表明佛家作为三界中守护秩序的存在，善于用教化来归化妖怪，维护自身的势力与地位。</p>
+    </div>
+</body>
+</html>
